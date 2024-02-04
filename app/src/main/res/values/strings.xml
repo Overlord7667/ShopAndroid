@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Shop Android</string>
+    <string name="title_activity_home">Home_activity</string>
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Каталог</string>
+    <string name="title_notifications">Корзина</string>
+    <string name="title_offer">Акции</string>
+    <string name="title_profile">Профиль</string>
+</resources>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/nameArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/firstNameID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="190dp"
+            android:hint="Имя"
+            android:paddingStart="10sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@drawable/rounded_edittext_bg"/>
+
+        <ImageButton
+            android:id="@+id/clearName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="187dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/clear_24" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/secondNameArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameArea">
+
+        <EditText
+            android:id="@+id/secondNameID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Фамилия"
+            android:paddingStart="10sp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:background="@drawable/rounded_edittext_bg"/>
+
+        <ImageButton
+            android:id="@+id/clearSecondName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/clear_24" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phoneArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondNameArea">
+
+        <EditText
+            android:id="@+id/phoneNumberID"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="Номер телефона"
+            android:paddingStart="10sp"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:background="@drawable/rounded_edittext_bg"/>
+
+        <ImageButton
+            android:id="@+id/clearPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/clear_24" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/loginID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        app:cornerRadius="10dp"
+        android:layout_below="@+id/phoneArea"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#EF7CEA"
+        android:text="Войти"
+        android:enabled="false"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Нажимая кнопку &quot;Войти&quot;, Вы принимаете"
+            android:textColor="#AAA9A9"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="условия программы лояльности"
+            android:textColor="#AAA9A9"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text1"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

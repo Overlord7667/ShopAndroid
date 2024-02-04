@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Главная" />
+
+    <item
+        android:id="@+id/navigation_catalog"
+        android:icon="@drawable/baseline_list_alt_24"
+        android:title="Каталог" />
+
+    <item
+        android:id="@+id/navigation_cart"
+        android:icon="@drawable/baseline_shopping_bag_24"
+        android:title="Корзина" />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/baseline_local_offer_24"
+        android:title="Акции" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/baseline_perm_identity_24"
+        android:title="Профиль" />
+
+</menu>
